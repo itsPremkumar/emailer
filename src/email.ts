@@ -46,39 +46,6 @@ function escapeHtml(str: string): string {
   });
 }
 
-// export async function sendBulk(
-//   people: Person[],
-//   subject: string,
-//   message: string
-// ): Promise<SendResult[]> {
-//   const transporter = getTransport();
-//   const results: SendResult[] = [];
-
-//   for (const person of people) {
-//     try {
-//       const info = await transporter.sendMail({
-//         from: {
-//           name: FROM_NAME || 'Marketing',
-//           address: FROM_EMAIL!,
-//         },
-//         to: `${person.name} <${person.email}>`,
-//         subject,
-//         text: message,
-//         html: `<p>${escapeHtml(message).replace(/\n/g, '<br/>')}</p>`,
-//       });
-
-//       results.push({ person, success: true });
-//     } catch (err: any) {
-//       results.push({
-//         person,
-//         success: false,
-//         error: err?.message || String(err),
-//       });
-//     }
-//   }
-
-//   return results;
-// }
 
 
 export async function sendBulk(
