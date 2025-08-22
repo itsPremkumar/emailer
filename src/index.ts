@@ -13,8 +13,35 @@ async function main() {
     file: 'recipients.xlsx',
 
     dept: 'Computer Science',
-    subject: 'message for testing promotion',
-    message: 'prem now you rereived message?'
+    subject: 'Message for Testing Promotion',
+    message:`🌟 **Greetings from Sproutern!!!** 🎓🚀
+
+📑📃
+**PLATFORM FOR INTERNSHIPS & PLACEMENTS:** ✍🏼 📤
+
+Visit our site here: [Click Here](https://www.sproutern.com/)
+
+**Sproutern** is your gateway to **exclusive internship and placement opportunities** designed for students looking to kickstart their careers.
+
+📊 Get access to **top companies**, **real-world projects**, and **career-building experiences**.
+
+👨🏽‍💻 **Explore internships, attend placement drives, and connect with recruiters directly**.
+
+✅ **Why Choose Sproutern:**  
+- **Verified Internship Opportunities** from trusted companies  
+- **Placement Assistance** to help you land your dream job  
+- **Career Resources & Mentorship** for skill development  
+- **Notifications for New Opportunities** directly to your inbox
+
+📖 **Target Users:**  
+🌐 College & University Students  
+🎓 Fresh Graduates  
+💼 Aspiring Professionals  
+
+💸 **Flexible and Free Access:**  
+✔️ Sign up for free and start exploring opportunities today!  
+
+✅ **Level up your career with Sproutern — Start your journey now!** 🚀`
   };
 
   const argv = await yargs(hideBin(process.argv))
@@ -34,7 +61,7 @@ async function main() {
   console.log(`File: ${file}`);
   console.log(`Department: ${dept}`);
   console.log(`Subject: ${subject}`);
-  console.log(`Message: ${message}`);
+  console.log(`Message:\n${message}`);
 
   if (!file || !dept || !subject || !message) {
     throw new Error('file, dept, subject, and message are required.');
@@ -79,3 +106,7 @@ async function main() {
 }
 
 main().catch(console.error);
+
+
+
+
